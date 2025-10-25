@@ -3,17 +3,18 @@
 int main ()
 {
     
-    int a, b, *p, *q, sum;
+    int a, b, sum;
+    int  *p, *q;
     printf("Enter the first number: ");
     scanf("%d",&a);
     
     printf("Enter the Second number: ");
     scanf("%d",&b);
-     *p = a;
-     *q = b;
+     p = &a;
+     q = &b;
      sum = *p + *q;
 
-    printf("The sum of %d + %d is  : %d",*p,*q,sum);
+    printf("The sum of %d + %d is  : %d \n",*p,*q,sum);
 
     return 0;
   }
