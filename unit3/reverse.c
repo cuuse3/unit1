@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void reverseArray(int *arr, int size) {
+int reversearray(int *arr, int size) {
     int *start = arr;
     int *end = arr + size - 1;
     while (start < end) {
@@ -20,10 +20,11 @@ int main() {
     int arr[n];
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
+        printf("Enter the value of index %d : ",i+1);
         scanf("%d", &arr[i]);
     }
 
-    reverseArray(arr, n);
+    reversearray(arr, n);
 
     printf("Reversed array:\n");
     for (int i = 0; i < n; i++) {
