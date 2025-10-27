@@ -1,1 +1,0 @@
-// Define a Book structure with fields title, author, price, and pages. Accept details for 3 books and display them.

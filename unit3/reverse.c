@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int reversearray(int *arr, int size) {
+void reversearray(int *arr, int size) {
     int *start = arr;
     int *end = arr + size - 1;
     while (start < end) {
@@ -11,7 +11,6 @@ int reversearray(int *arr, int size) {
         end--;
     }
 }
-
 int main() {
     int n;
     printf("Enter size of array: ");
